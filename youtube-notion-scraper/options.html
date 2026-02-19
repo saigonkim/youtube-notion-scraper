@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube to Notion Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    label { display: block; margin-top: 10px; }
+    input { width: 400px; padding: 5px; }
+    button { margin-top: 20px; padding: 8px 16px; cursor: pointer; }
+    .status { margin-top: 10px; color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Notion Configuration</h2>
+  <label for="notionKey">Notion Internal Integration Secret:</label>
+  <input type="password" id="notionKey" placeholder="secret_...">
+
+  <label for="databaseId">Notion Database ID:</label>
+  <input type="text" id="databaseId" placeholder="Database ID">
+
+  <button id="save">Save</button>
+  <div id="status" class="status"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
